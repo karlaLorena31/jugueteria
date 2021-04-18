@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import firebase from 'firebase'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
@@ -13,7 +14,10 @@ const routes = [
   {
     path: '/listado',
     name: 'Listado',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Listado.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Listado.vue'),
+    meta: {
+      requiresAuth:true
+     },
   },
     {
     path: '/login',
@@ -42,5 +46,10 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
-
+router.beforeEach((to,from,next) => {
+  const authenticatedUser = firebase.auth().currentUser;
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+  if (requiresAuth && !authenticatedUser) next('/')
+  else next()
+});
 export default router

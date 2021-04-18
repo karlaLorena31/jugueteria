@@ -22,11 +22,11 @@
 
   <div class="form-group">
     <label >Stock</label>
-    <input type="number" class="form-control" v-model="juguete.stock">
+    <input type="number" class="form-control" required  v-model="juguete.stock">
   </div>
   <div class="form-group">
     <label >Precio</label>
-    <input type="number" class="form-control" v-model="juguete.price">
+    <input type="number" class="form-control" required  v-model="juguete.price">
   </div>
 
 

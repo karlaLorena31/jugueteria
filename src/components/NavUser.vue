@@ -16,10 +16,12 @@
          <router-link class="nav-link text-success" to="/listado">LISTADO</router-link>
       </li>
     </ul>
-    <div class="d-flex flex-row  my-2 my-lg-0">  
-      <p class=" text-success  m-auto pr-5">Autentificado como:  {{user.displayName }} </p>   
+
+    <form class="form-inline my-2 my-lg-0">
+      <p class=" mr-sm-2 text-success pr-5 pt-2 ">Autentificado como :  {{user.displayName }} </p>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="logout">CERRAR</button>
-    </div>
+    </form>
+
   </div>
 </nav>
 </div> 

@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5 fondo mt-5">
+  <div class="container-fluid py-5 fondo mt-5">
     <h1 class="text-center">Registro</h1>
     <div class="row  ">
       <div class="col-sm-12 ">
@@ -86,6 +86,7 @@ export default {
                                      displayName: this.user.name
                                   }).then(() => {
                                                   this.$router.push('/login')
+
                                                 });
                     },
 

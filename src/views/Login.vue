@@ -1,7 +1,7 @@
 <template>
  
-  <div class="container py-5 mt-5 fondo">
-      <h1 class="text-center">Autentificación</h1>
+  <div class="container-fluid ">
+      <h1 class="text-center py-5 mt-5 ">Autentificación</h1>
     <div class="row  ">
       <div class="col-sm-12 ">
         <form class="w-50 m-auto p-5 " id="signup-form" @submit.prevent="loginUser">
