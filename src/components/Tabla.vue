@@ -1,7 +1,8 @@
 <template>
-  <div class="row">
-      <div class="col-md-12 col-12">
-        <table class="table  table-hover text-center">
+<div class="container">
+  <div class="row ">
+      <div class="table-responsive">
+        <table class=" table table-sm table-hover text-center">
           <thead>
             <tr>
              
@@ -37,8 +38,10 @@
           </tbody>
         </table>
       </div>
-      <Footer/>
-    </div>
+  </div>
+ 
+ </div>
+    
 </template>
 
 <script>
@@ -47,6 +50,7 @@ import { db } from "../main.js";
 
 export default {
   name: "List",
+   
   
 
   data() {
@@ -105,8 +109,5 @@ export default {
 </script>
 
 <style scoped>
-.boton{
-  width: 30%;
-  height: 30%;
-}
+
 </style>

@@ -1,20 +1,20 @@
 <template>
   <div class="container-fluid">
     <div class="row m-auto">
-      <div class="col-md-12 col-lg-12 mt-3">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-3">
         <h5>Home</h5>
         <hr />
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12 col-lg-12 ">
+      <div class=" col-12 col-sm-12 col-md-12 col-lg-12 ">
         <h1 class="text-center">Sistema Gestión de Inventarios</h1>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12 col-lg-12 mt-5 ">
+      <div class=" col-12 col-sm-12 col-md-12 col-lg-12 mt-5  justify-content-center">
         <img
           class="img-fluid rounded-circle m-auto"
           src="..\assets\img\portada.jpeg"

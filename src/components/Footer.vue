@@ -1,7 +1,7 @@
 <template>
 
 <div >
-  <footer class="bg-dark text-center text-white mt-5 ">
+  <footer class="bg-dark text-center text-white mt-5 col-12 col-lg-12">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Social media -->
