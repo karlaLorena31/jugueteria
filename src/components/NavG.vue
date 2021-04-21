@@ -17,7 +17,7 @@
       </li>
     </ul>
     <div class="form-inline my-2 my-lg-0">     
-     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><router-link class="text-white" to="/login"> Ingresar</router-link></button>
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><router-link class="text-white" to="/login"> 🔐</router-link></button>
     </div>
   </div>
 </nav>

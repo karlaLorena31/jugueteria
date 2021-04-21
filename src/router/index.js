@@ -31,13 +31,12 @@ const routes = [
     component:  () => import(/* webpackChunkName: "about" */ '../views/Registro.vue')
      
   },
-     {
-    path: '/add',
-    name: 'Add',
-    component: () => import( '../components/Agregar.vue') // crear usuarios
+      {
+    path: '/edit/:id',        // se edita un id especifico
+    name: 'UserEdit',
+        component: () => import('../components/UserEdit.vue'),  //editar lista de usuarios,
+
   },
-    
-    
     
 ]
 

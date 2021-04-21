@@ -19,7 +19,7 @@
 
     <form class="form-inline my-2 my-lg-0">
       <p class=" mr-sm-2 text-success pr-5 pt-2 ">Autentificado como :  {{user.displayName }} </p>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="logout">CERRAR</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="logout">🔓</button>
     </form>
 
   </div>

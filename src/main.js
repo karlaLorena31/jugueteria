@@ -3,6 +3,7 @@ import firebase from 'firebase'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import '../src/assets/css/main.css'
 // bootstrap-vue
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -28,9 +29,6 @@ const firebaseConfig = {
   };
   // Initialize Firebase
 export const db = firebase.initializeApp(firebaseConfig).firestore();
-
-
-
 
 new Vue({
   router,

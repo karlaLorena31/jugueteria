@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div id="app" >
     <div v-if="user">
       <NavUser />
     </div>
@@ -7,7 +7,20 @@
       <NavG />
     </div>
 
-    <router-view />
+   <transition name="fade">
+       <router-view> </router-view >
+</transition>
+<div class="container-fluid">
+  <div class="row  ">
+      <div class="col-md-12 col-lg-12 mt-5 bg-dark">
+       
+      <Footer/>
+        
+      </div>
+    </div>
+</div>
+    
+   
   </div>
 </template>
 
@@ -15,6 +28,7 @@
 
 import NavG from "../src/components/NavG";
 import NavUser from "../src/components/NavUser";
+import Footer from '../src/components/Footer'
 import firebase from 'firebase'
 
 export default {
@@ -22,6 +36,7 @@ export default {
   components: {
     NavG,
     NavUser,
+    Footer
   },
   data(){
     return{
@@ -40,4 +55,17 @@ created() {
 }
 </script>
 
-<style></style>
+<style>
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .3s;
+}
+ 
+.fade-enter-active {
+  transition-delay: .25s;
+}
+ 
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}</style>
