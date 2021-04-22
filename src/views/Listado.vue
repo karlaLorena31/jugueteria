@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid mt-5">
-    <div class="col-lg-12 mt-5 ">
+  <div class="container-fluid ">
+    <div class="col-lg-12  ">
       <h5 class="pt-4 ">Listado</h5>
       <hr />
     </div>

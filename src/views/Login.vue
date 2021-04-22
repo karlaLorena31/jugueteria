@@ -1,10 +1,10 @@
 <template>
 
-  <div class="container-fluid">
-      <h1 class="text-center py-5 mt-5 ">Autentificación</h1>
-    <div class="row  ">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
-        <form class=" w-50 m-auto p-5 borde" id="signup-form" @submit.prevent="loginUser">
+ <div class="container-fluid">
+<h2 class="text-center py-5  ">Autentificación</h2>
+   <div class="row justify-content-center ">
+     <div class="col-12  col-sm-12 col-md-4 ">
+       <form class=" m-auto p-5 borde " id="signup-form" @submit.prevent="loginUser">
           <div  class="form-group  ">
             <label for="email">Email </label>
             <input type="email" class="form-control " id="email" v-model="user.email" aria-describedby="emailHelp" />          
@@ -26,9 +26,15 @@
 
           </div>
         </form>
-      </div>
-    </div>
-  </div>
+
+
+     </div>
+   </div>
+
+   
+
+
+ </div>
  
  
 </template>

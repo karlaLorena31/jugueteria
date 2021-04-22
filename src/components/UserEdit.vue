@@ -1,7 +1,7 @@
 <template>
-<div class="container-fluid mt-5">
+<div class="container-fluid ">
 
-<div  class="row justify-content-center mt-5">
+<div  class="row justify-content-center ">
   <div class="col-md-6">
     <h3 class="text-left mt-5"> Editar </h3>
 

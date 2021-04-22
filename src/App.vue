@@ -7,12 +7,18 @@
       <NavG />
     </div>
 
-   <transition name="fade">
+ 
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class=" col-12 col-md-12 col-lg-12" >
+  <transition name="fade">
        <router-view> </router-view >
 </transition>
-<div class="container-fluid">
-  <div class="row  ">
-      <div class=" col-12 col-md-12 col-lg-12 mt-5 bg-dark">
+
+    </div>
+  </div>
+  <div class="row mt-5 ">
+      <div class=" col-12 col-md-12 col-lg-12  bg-dark">
        
       <Footer/>
         
